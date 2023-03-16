@@ -17,7 +17,19 @@
       </div>
     <div class="titre">
         <H1>Exeaucity une nouvelle energie</H1>
-        <button ><a href="/projet/projet.html">notre projet</a></button >
+        <button data-modal-target="#modal" id="btn-projet">Notre projet</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Téléchargé notre projet</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+              <button id = "btn-projet"><a href="Eau_et_villes_durables.docx">Word</a></button>
+              <button id = "btn-projet"><a>PowerPoint</a></button>
+          </div>
+        </div>
+        <div id="overlay"></div>
     </div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

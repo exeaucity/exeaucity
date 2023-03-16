@@ -2,22 +2,6 @@
     text-align: center;
     margin-top: 100px;
 }
-.titre button{
-    height:80px;
-    width:150px;
-    color: white;
-    background: #0950d3;
-    border-radius: 8px;
-    font-family: "Cambria";
-}
-.titre a:link {
-    color: white;
-    text-decoration: none;
-}
-.titre a:visited {
-    color: white;
-    text-decoration: none;
-}
 body{
     background-image: url('img/seine.jpg');
     background-repeat: no-repeat;
@@ -25,6 +9,72 @@ body{
     background-position: center;
     font-family:'Cambria';
 }
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 
 .header {
     overflow: hidden;
@@ -61,3 +111,11 @@ body{
   .header-right {
     float: right;
   }
+#btn-projet{
+  height: 50px;
+  width: 100px;
+color: white;
+background-color: gray;
+border: none;
+border-radius: 8px;
+}
