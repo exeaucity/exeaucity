@@ -1,6 +1,6 @@
 function myFunction() {
-    navigator.clipboard.writeText("test");
-    alert("Copied the text: test");
+    navigator.clipboard.writeText("exeaucity@gmail.com");
+    alert("Copied the text: exeaucity@gmail.com");
   }
 
 
